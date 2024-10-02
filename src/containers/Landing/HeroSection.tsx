@@ -1,9 +1,9 @@
 import React from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import Link from "next/link";
-import { Stack, Flex, Button, Badge } from "@mantine/core";
+import { Stack, Flex, Button, Image } from "@mantine/core";
 import styled from "styled-components";
-import { FaChevronRight, FaFire } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin-ext"],
@@ -36,7 +36,7 @@ const StyledHeroSectionBody = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 6rem 10% 8rem;
+  padding: 6rem 10% 4rem;
   overflow: hidden;
   text-align: center;
   gap: 60px;
@@ -105,16 +105,10 @@ export const HeroSection = () => {
       <StyledHeroSectionBody>
         <Stack flex="1" miw={250} mx="auto" align="center">
           <Link href="https://todiagram.com?ref=jsoncrack.com">
-            <Badge
-              fw={600}
-              size="lg"
-              variant="outline"
-              color="red.5"
-              leftSection={<FaFire />}
-              tt="unset"
-            >
-              NEW: Now faster & more powerful — ToDiagram.com
-            </Badge>
+            <Flex justify="center" fz="sm" c="gray.8" gap="8" align="center">
+              built by
+              <Image src="/assets/todiagram_logo.png" alt="Todiagram Logo" h={14} loading="eager" />
+            </Flex>
           </Link>
           <StyledHeroTitle>Visualize JSON into interactive graphs</StyledHeroTitle>
           <StyledHeroText>
@@ -125,7 +119,7 @@ export const HeroSection = () => {
           <Flex gap="xs" wrap="wrap" justify="center" hiddenFrom="xs">
             <Button
               component="a"
-              color="indigo"
+              color="#202842"
               href="/editor"
               size="md"
               radius="md"

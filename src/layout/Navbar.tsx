@@ -43,7 +43,6 @@ const Center = styled.div`
   gap: 6px;
   align-items: center;
   white-space: nowrap;
-  width: 100%;
   justify-content: center;
 
   @media only screen and (max-width: 768px) {
@@ -59,16 +58,6 @@ export const Navbar = () => {
           <JSONCrackLogo fontSize="1.2rem" />
         </Left>
         <Center>
-          <Button
-            component="a"
-            href="https://todiagram.com"
-            variant="subtle"
-            color="black"
-            size="md"
-            radius="md"
-          >
-            Upgrade
-          </Button>
           <Button
             component="a"
             href="https://marketplace.visualstudio.com/items?itemName=AykutSarac.jsoncrack-vscode"
@@ -91,18 +80,28 @@ export const Navbar = () => {
           >
             Open Source
           </Button>
-        </Center>
-        <Right>
           <Button
             variant="subtle"
             color="black"
             component={Link}
-            href="/sign-in"
+            href="/docs"
             visibleFrom="sm"
             size="md"
             radius="md"
           >
-            Log in
+            Docs
+          </Button>
+        </Center>
+        <Right>
+          <Button
+            component="a"
+            href="https://todiagram.com"
+            variant="subtle"
+            color="black"
+            size="md"
+            radius="md"
+          >
+            Upgrade
           </Button>
           <Button
             radius="md"
