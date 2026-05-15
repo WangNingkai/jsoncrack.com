@@ -1,0 +1,6 @@
+interface:
+  display_name: "Jsoncrack.com"
+  short_description: "Repo-specific patterns and workflows for jsoncrack.com"
+  default_prompt: "Use the jsoncrack.com repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
