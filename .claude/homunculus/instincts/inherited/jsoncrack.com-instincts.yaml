@@ -1,0 +1,279 @@
+# Instincts generated from https://github.com/WangNingkai/jsoncrack.com
+# Generated: 2026-05-15T22:02:44.519Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: jsoncrack.com-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Commit Length
+
+## Action
+
+Keep commit messages concise (~11 characters)
+
+## Evidence
+
+- Average commit message length: 11 chars
+- Based on 1 commits
+
+---
+id: jsoncrack.com-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: jsoncrack.com-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: jsoncrack.com-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: jsoncrack.com-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: jsoncrack.com-instinct-file-naming-camelCase
+trigger: "When creating or renaming a file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct File Naming CamelCase
+
+## Action
+
+Use camelCase for the file name
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: jsoncrack.com-instinct-function-naming-camelCase
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Function Naming CamelCase
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: jsoncrack.com-instinct-class-naming-PascalCase
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Class Naming PascalCase
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: jsoncrack.com-instinct-constant-naming-SCREAMING_SNAKE_CASE
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Constant Naming SCREAMING_SNAKE_CASE
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: jsoncrack.com-instinct-import-style-relative
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: jsoncrack.com-instinct-export-style-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: jsoncrack.com-instinct-test-location-separate
+trigger: "When adding or updating tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: jsoncrack.com-instinct-monorepo-apps-packages
+trigger: "When adding a new app or package"
+confidence: 0.9
+domain: architecture
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Monorepo Apps Packages
+
+## Action
+
+Place the new app in 'apps/' or the new package in 'packages/'
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders: apps, packages
+
+---
+id: jsoncrack.com-instinct-commit-message-freeform
+trigger: "When writing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: WangNingkai/jsoncrack.com
+---
+
+# Jsoncrack.com Instinct Commit Message Freeform
+
+## Action
+
+Use a short, freeform message without a specific prefix
+
+## Evidence
+
+- Seen in commit: 'update deps'
+- Pattern in commits.prefixes: []
+- Pattern in commits.averageLength: 11
+
